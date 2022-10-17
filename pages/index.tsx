@@ -58,11 +58,6 @@ const Home: NextPage = () => {
     },
   ];
   return (
-    // <div>
-    //   <UserBoardWidget />
-    //   <Categories categories={categories} />
-    //   <Product products={products} />
-    // </div>
     <PageLayout>
       <Categories categories={categories} />
       <Product products={products} />
