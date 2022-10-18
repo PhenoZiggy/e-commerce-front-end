@@ -11,6 +11,7 @@
 //   // More products...
 // ];
 
+import Image from 'next/image';
 import IProduct from './IProduct';
 
 export default function product({ products }: IProduct) {
@@ -24,7 +25,7 @@ export default function product({ products }: IProduct) {
             <div key={product.id}>
               <div className="relative">
                 <div className="relative h-72 w-full overflow-hidden rounded-lg">
-                  <img src={product.imageSrc} alt={product.imageAlt} className="h-full w-full object-cover object-center" />
+                  <Image src={product.imageSrc} alt={product.imageAlt} className="h-full w-full object-cover object-center" objectFit="fill" layout="fill" />
                 </div>
                 <div className="relative mt-4">
                   <h3 className="text-sm font-medium text-gray-900">{product.name}</h3>

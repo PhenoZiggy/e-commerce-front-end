@@ -9,24 +9,24 @@ const Home: NextPage = () => {
     {
       name: 'New Arrivals',
       href: '#',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-category-01.jpg',
+      imageSrc: '/img/cat-1.jpg',
     },
     {
       name: 'Productivity',
       href: '#',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-category-02.jpg',
+      imageSrc: '/img/cat-1.jpg',
     },
     {
       name: 'Workspace',
       href: '#',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-category-04.jpg',
+      imageSrc: '/img/cat-1.jpg',
     },
     {
       name: 'Accessories',
       href: '#',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-category-05.jpg',
+      imageSrc: '/img/cat-1.jpg',
     },
-    { name: 'Sale', href: '#', imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg' },
+    { name: 'Sale', href: '#', imageSrc: '/img/cat-1.jpg' },
   ];
   const products = [
     {
@@ -34,7 +34,7 @@ const Home: NextPage = () => {
       name: 'Zip Tote Basket',
       color: 'White and black',
       href: '#',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-01.jpg',
+      imageSrc: '/img/card-product-1.jpg',
       imageAlt: 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
       price: '$140',
     },
@@ -43,7 +43,7 @@ const Home: NextPage = () => {
       name: 'Zip Tote Basket',
       color: 'White and black',
       href: '#',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-01.jpg',
+      imageSrc: '/img/card-product-1.jpg',
       imageAlt: 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
       price: '$140',
     },
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
       name: 'Zip Tote Basket',
       color: 'White and black',
       href: '#',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-01.jpg',
+      imageSrc: '/img/card-product-1.jpg',
       imageAlt: 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
       price: '$140',
     },

@@ -1,4 +1,5 @@
 import { CheckIcon, ClockIcon, QuestionMarkCircleIcon, XIcon } from '@heroicons/react/solid';
+import Image from 'next/image';
 import ICart from './ICart';
 
 export default function Cart({ products }: ICart) {
@@ -16,7 +17,13 @@ export default function Cart({ products }: ICart) {
               {products.map((product, productIdx) => (
                 <li key={product.id} className="flex py-6 sm:py-10">
                   <div className="flex-shrink-0">
-                    <img src={product.imageSrc} alt={product.imageAlt} className="h-24 w-24 rounded-md object-cover object-center sm:h-48 sm:w-48" />
+                    <Image
+                      src={product.imageSrc}
+                      alt={product.imageAlt}
+                      className="h-24 w-24 rounded-md object-cover object-center sm:h-48 sm:w-48"
+                      objectFit="contain"
+                      layout="fill"
+                    />
                   </div>
 
                   <div className="ml-4 flex flex-1 flex-col justify-between sm:ml-6">
