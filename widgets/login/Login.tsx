@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import LoginBackground from '../../public/img/login.png';
+import bg from '../../public/img/login.png';
 import Google from '../../public/img/google.png';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -14,14 +15,17 @@ const Login = () => {
     Router.push('/');
   };
   return (
-    <div className="flex bg-white/40 rounded-2xl overflow-hidden">
-      <div className="flex-1 mx-auto overflow-hidden">
-        <div className="flex-shrink-0 w-screen flex">
-          <Image src={LoginBackground} width="500" height="600" objectFit="none" />
-        </div>
+    <div className="flex bg-white/40 rounded-2xl flex-col md:flex-row">
+      <div className="flex-1 mx-auto">
+        <div
+          className={['relative', 'md:w-full', 'w-full', 'md:h-full', 'h-1/4', 'bg-center', 'bg-cover'].join(' ')}
+          style={{
+            backgroundImage: `url(${LoginBackground.src})`,
+          }}
+        ></div>
       </div>
-      <div className="bg-white flex-1 ">
-        <section className="py-28 px-14 space-y-4">
+      <div className="bg-white flex-1 rounded-lg md:rounded-none">
+        <section className="md:py-28 md:px-14 py-10 px-3 space-y-4 rounded-lg">
           <div className="space-y-2">
             <h3 className="text-2xl font-bold">Get's started.</h3>
             <span className="flex space-x-2">

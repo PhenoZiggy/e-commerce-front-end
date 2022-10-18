@@ -1,16 +1,3 @@
-// const products = [
-//   {
-//     id: 1,
-//     name: 'Zip Tote Basket',
-//     color: 'White and black',
-//     href: '#',
-//     imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-01.jpg',
-//     imageAlt: 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
-//     price: '$140',
-//   },
-//   // More products...
-// ];
-
 import Image from 'next/image';
 import IProduct from './IProduct';
 
@@ -23,9 +10,9 @@ export default function product({ products }: IProduct) {
         <div className="mt-8 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
           {products.map((product) => (
             <div key={product.id}>
-              <div className="relative">
+              <div className="relative group">
                 <div className="relative h-72 w-full overflow-hidden rounded-lg">
-                  <Image src={product.imageSrc} alt={product.imageAlt} className="h-full w-full object-cover object-center" objectFit="fill" layout="fill" />
+                  <Image src={product.imageSrc} alt={product.imageAlt} className="h-full w-full object-cover object-center group-hover:scale-105 duration-200" objectFit="fill" layout="fill" />
                 </div>
                 <div className="relative mt-4">
                   <h3 className="text-sm font-medium text-gray-900">{product.name}</h3>

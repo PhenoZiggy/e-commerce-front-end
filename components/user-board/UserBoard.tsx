@@ -64,7 +64,7 @@ export default function Example() {
                   <button type="button" className="rounded-full bg-gray-50 p-1 text-[#3AA39F] hover:scale-110 duration-300 focus:outline-none">
                     <div className="relative w-11 h-10 flex items-center">
                       <ShoppingCartIcon className="h-6 w-6" aria-hidden="true" />
-                      <span className="absolute top-0 right-0 text-[#3AA39F]  bg-green-100 w-6 rounded-full">3</span>
+                      <span className="absolute top-0 right-0 text-[#1b5352]  bg-green-100 w-6 rounded-full animate-pulse">3</span>
                     </div>
                   </button>
                 </Link>
@@ -74,7 +74,7 @@ export default function Example() {
                   <div>
                     <Menu.Button className="flex rounded-full bg-[#3AA39F] text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#3AA39F]">
                       <span className="sr-only">Open user menu</span>
-                      <Image className="h-8 w-8 rounded-full" src="/img/cat-1.jpg" alt="" width="40" height="40" />
+                      <Image className="h-8 w-8 rounded-full" src="/img/avatar.jpg" alt="" width="40" height="40" />
                     </Menu.Button>
                   </div>
                   <Transition
