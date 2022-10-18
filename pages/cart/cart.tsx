@@ -12,7 +12,7 @@ const CartPage = () => {
       color: 'Sienna',
       inStock: true,
       size: 'Large',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/shopping-cart-page-01-product-01.jpg',
+      imageSrc: '/img/cat-1.jpg',
       imageAlt: "Front of men's Basic Tee in sienna.",
     },
     {
@@ -24,7 +24,7 @@ const CartPage = () => {
       inStock: false,
       leadTime: '3–4 weeks',
       size: 'Large',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/shopping-cart-page-01-product-02.jpg',
+      imageSrc: '/img/cat-1.jpg',
       imageAlt: "Front of men's Basic Tee in black.",
     },
     {
@@ -34,7 +34,7 @@ const CartPage = () => {
       price: '$35.00',
       color: 'White',
       inStock: true,
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/shopping-cart-page-01-product-03.jpg',
+      imageSrc: '/img/cat-1.jpg',
       imageAlt: 'Insulated bottle with white base and black snap lid.',
     },
   ];
